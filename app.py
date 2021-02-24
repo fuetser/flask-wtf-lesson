@@ -46,5 +46,19 @@ def login():
     return render_template("login.html", form=form, title="Аварийный доступ")
 
 
+@app.route("/distribution")
+def distribution():
+    crew = [
+        "Риддли Скотт",
+        "Эдни Уирр",
+        "Марк Уотни",
+        "Венката Капур",
+        "Тэдди Сандерс",
+        "Шон Бин",
+    ]
+    return render_template(
+        "distribution.html", title="Размещение по каютам", crew=crew)
+
+
 if __name__ == '__main__':
     app.run(port=8080, debug=True)
