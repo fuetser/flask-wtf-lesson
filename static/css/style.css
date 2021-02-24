@@ -7,3 +7,15 @@
 h4 {
     color: #a0a0a0;
 }
+
+.block {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+}
