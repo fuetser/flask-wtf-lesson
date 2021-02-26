@@ -60,5 +60,11 @@ def distribution():
         "distribution.html", title="Размещение по каютам", crew=crew)
 
 
+@app.route("/table/<gender>/<int:age>")
+def table(gender, age):
+    return render_template(
+        "table.html", title="Оформление каюты", gender=gender, age=age)
+
+
 if __name__ == '__main__':
     app.run(port=8080, debug=True)

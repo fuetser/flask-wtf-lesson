@@ -29,3 +29,53 @@ h4 {
     padding-top: 10px;
     font-size: 1.2rem;
 }
+
+.color-block {
+    margin: 0;
+    width: 20vw;
+    height: 60vh;
+    display: inline-block;
+}
+
+.old-female {
+    background-color: #ff4500;
+}
+
+.young-female {
+    background-color: #ffa07a;
+}
+
+.old-male {
+    background-color: #007ff0;
+}
+
+.young-male {
+    background-color: #b0c4de;
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    margin: auto 1rem;
+    width: 20vw;
+    font-size: 1.2rem;
+}
+
+.title {
+    display: flex;
+    background-color: #c5c5c5; 
+    width: 40vw;
+    justify-content: center;
+}
