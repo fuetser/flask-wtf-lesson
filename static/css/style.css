@@ -79,3 +79,9 @@ h4 {
     width: 40vw;
     justify-content: center;
 }
+
+
+.form {
+    margin-bottom: 20px;
+    padding: 10px;
+}

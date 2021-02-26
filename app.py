@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template
 from forms import *
 
@@ -64,6 +65,18 @@ def distribution():
 def table(gender, age):
     return render_template(
         "table.html", title="Оформление каюты", gender=gender, age=age)
+
+
+@app.route("/galery", methods=["GET", "POST"])
+def galery():
+    form = FileForm()
+    if form.validate_on_submit():
+        form.filename.data.save(
+            f"{os.getcwd()}/static/img/carousel/{form.filename.data.filename}")
+    files = [f"/img/carousel/{file}"
+             for file in os.listdir(f"{os.getcwd()}/static/img/carousel")]
+    return render_template(
+        "galery.html", title="Красная планета", form=form, files=files)
 
 
 if __name__ == '__main__':
