@@ -1,6 +1,6 @@
 import json
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 from forms import *
 
 
@@ -45,6 +45,8 @@ def answer():
 @app.route("/login", methods=["GET", "POST"])
 def login():
     form = LoginForm()
+    if form.validate_on_submit():
+        return redirect("/success")
     return render_template("login.html", form=form, title="Аварийный доступ")
 
 
