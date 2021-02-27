@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Энди",
+        "surname": "Уир",
+        "professions": ["астрогеолог", "специалист по радиационной защите"],
+        "picture": "img/robot.jpg"
+    },
+    {
+        "name": "Риддли",
+        "surname": "Скотт",
+        "professions": ["инженер-исследователь", "инженер по жизнеобеспечению"],
+        "picture": "img/robot.jpg"
+    },
+    {
+        "name": "Марк",
+        "surname": "Уотни",
+        "professions": ["врач", "пилот"],
+        "picture": "img/robot.jpg"
+    },
+    {
+        "name": "Венката",
+        "surname": "Капур",
+        "professions": ["экзобиолог", "инженер-исследователь"],
+        "picture": "img/robot.jpg"
+    },
+    {
+        "name": "Тэдди",
+        "surname": "Сандерс",
+        "professions": ["инженер по жизнеобеспечению", "инженер-строитель"],
+        "picture": "img/robot.jpg"
+    },
+    {
+        "name": "Шон",
+        "surname": "Бин",
+        "professions": ["пилот", "метеоролог"],
+        "picture": "img/robot.jpg"
+    }
+]

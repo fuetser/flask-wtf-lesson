@@ -1,3 +1,4 @@
+import json
 import os
 from flask import Flask, render_template
 from forms import *
@@ -77,6 +78,17 @@ def galery():
              for file in os.listdir(f"{os.getcwd()}/static/img/carousel")]
     return render_template(
         "galery.html", title="Красная планета", form=form, files=files)
+
+
+@app.route("/member")
+def member():
+    try:
+        with open("templates/crew.json", encoding="u8") as f:
+            data = json.load(f)
+    except Exception as e:
+        print(e)
+        data = []
+    return render_template("member.html", title="Личная карточка", data=data)
 
 
 if __name__ == '__main__':
